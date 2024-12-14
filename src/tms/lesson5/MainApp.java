@@ -1,4 +1,4 @@
-package tms.tms.lesson5;
+package tms.lesson5;
 
 public class MainApp {
 
