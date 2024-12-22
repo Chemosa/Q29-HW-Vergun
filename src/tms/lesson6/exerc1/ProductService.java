@@ -1,4 +1,4 @@
-package tms.lesson6;
+package tms.lesson6.exerc1;
 
 public class ProductService {
 
