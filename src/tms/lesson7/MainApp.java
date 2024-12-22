@@ -16,14 +16,14 @@ public class MainApp {
 
         WholeCycle orderCycle = new WholeCycleImpl(
                 new ReceivedOnlineImpl(),
-                new SaveToDBImpl(),
+                new SaveImpl(),
                 new CookingOrderImpl(),
                 new DeliveryOrderClientImpl()
         );
 
         WholeCycle order2Cycle = new WholeCycleImpl(
                 new ReceivedByPhoneImpl(),
-                new SaveToDBImpl(),
+                new SaveImpl(),
                 new CookingOrderImpl(),
                 new DeliveryOrderStoreImpl()
         );
