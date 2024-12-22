@@ -6,6 +6,5 @@ public class CookingOrderImpl implements CookingOrder {
 
     @Override
     public void cookingMessage() {
-        System.out.println("Your order is cooking!");
     }
 }

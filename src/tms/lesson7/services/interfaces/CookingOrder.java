@@ -2,5 +2,7 @@ package tms.lesson7.services.interfaces;
 
 public interface CookingOrder {
 
-    void cookingMessage ();
+    default void cookingMessage () {
+        System.out.println("Your order is cooking!");
+    }
 }

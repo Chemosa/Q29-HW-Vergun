@@ -4,5 +4,5 @@ import tms.lesson7.domain.Order;
 
 public interface WholeCycle {
 
-    void OrderHandle (Order order);
+    void orderHandle (Order order);
 }

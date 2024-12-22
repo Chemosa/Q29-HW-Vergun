@@ -6,11 +6,11 @@ import tms.lesson7.services.interfaces.*;
 public class WholeCycleImpl implements WholeCycle {
 
     private ReceivingOrder recOrder;
-    private SavingOrderToDB saveToDB;
+    private SavingOrder saveToDB;
     private CookingOrder cookOrder;
     private DeliveryOrder delivery;
 
-    public WholeCycleImpl(ReceivingOrder recOrder, SavingOrderToDB saveToDB, CookingOrder cookOrder, DeliveryOrder delivery) {
+    public WholeCycleImpl(ReceivingOrder recOrder, SavingOrder saveToDB, CookingOrder cookOrder, DeliveryOrder delivery) {
         this.recOrder = recOrder;
         this.saveToDB = saveToDB;
         this.cookOrder = cookOrder;
@@ -18,7 +18,7 @@ public class WholeCycleImpl implements WholeCycle {
     }
 
     @Override
-    public void OrderHandle(Order order) {
+    public void orderHandle(Order order) {
 
         recOrder.receiveOrder(order);
         saveToDB.saveToDB(order);
