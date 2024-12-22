@@ -28,9 +28,9 @@ public class MainApp {
                 new DeliveryOrderStoreImpl()
         );
 
-        orderCycle.OrderHandle(order1);
+        orderCycle.orderHandle(order1);
         System.out.println("----------------------------");
-        order2Cycle.OrderHandle(order2);
+        order2Cycle.orderHandle(order2);
 
 
 

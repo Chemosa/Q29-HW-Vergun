@@ -1,6 +1,10 @@
 package tms.lesson7.services.interfaces;
 
+import tms.lesson7.domain.Order;
+
 public interface CookingOrder {
 
-    void cookingMessage ();
+    default void cookingMessage (Order order) {
+        System.out.println("Your order is cooking!");
+    }
 }

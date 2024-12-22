@@ -1,9 +1,9 @@
 package tms.lesson7.services.impl;
 
 import tms.lesson7.domain.Order;
-import tms.lesson7.services.interfaces.SavingOrderToDB;
+import tms.lesson7.services.interfaces.SavingOrder;
 
-public class SaveToDBImpl implements SavingOrderToDB {
+public class SaveToDBImpl implements SavingOrder {
 
     @Override
     public void saveToDB(Order order) {
