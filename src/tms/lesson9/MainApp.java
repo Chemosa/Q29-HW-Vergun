@@ -43,13 +43,16 @@ public class MainApp {
                 break;
             }
 
+            boolean result = false;
+
             try {
-                boolean result = gameService.play(number);
-                gameService.change(user, rate, result);
+                result = gameService.play(number);
             } catch (NumberOutOfBoundException numberOutOfBoundException) {
                 System.out.println("Your number is out of range.");
                 continue;
             }
+
+            gameService.change(user, rate, result);
 
             if (user.getBalance() == 0) {
                 System.out.println("You don't have enough money. Game over!");
