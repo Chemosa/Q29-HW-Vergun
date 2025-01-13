@@ -10,9 +10,9 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        ApplePhone phone1 = new ApplePhone("+375291702382", 5, "13.0");
-        AndroidPhone phone2 = new AndroidPhone("+375291702435", 0, "SB258X36");
-        WindowsPhone phone3 = new WindowsPhone("+375449632587", 20, "Win 10");
+        Phone phone1 = new ApplePhone("+375291702382", 5, "13.0");
+        Phone phone2 = new AndroidPhone("+375291702435", 0, "SB258X36");
+        Phone phone3 = new WindowsPhone("+375449632587", 20, "Win 10");
 
         CheckQualityServiceImpl checkQualityService = new CheckQualityServiceImpl();
 
