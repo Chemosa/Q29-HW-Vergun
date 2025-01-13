@@ -30,7 +30,8 @@ public class GameService {
 
         if (number == randomNumb) {
             return true;
-        } else return false;
+        } else {
+            return false;}
     }
 
 
